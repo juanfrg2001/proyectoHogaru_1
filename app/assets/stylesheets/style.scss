@@ -1,62 +1,56 @@
 .html,body{
-  margin: 0;
   font-family: 'Andada Pro', serif;
+  font-size: 1.0rem;
+  line-height: 2.0em;
+  margin: 0 auto;
 }
-.btn{
-  background-color: #f5ad79;
-  border-radius: 10px;
-  outline: none;
-  text-align: center;
-  text-transform: uppercase;
-  cursor: pointer;
-  height: 20%;
-  font-size: 1.2em;
-  padding: 10px 12px;
+.container{
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
 
 }
-a,a:visited{
-  color: inherit !important;
+.navigation{
+  margin-left: 100px;
+}
+header{
+  background: rgb(103, 204, 241);
+  color: darkgray;
+  padding: 2rem 0;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  align-items: center;
+
+}
+.opciones{
+  margin-left: 50px;
+}
+.header a{
+  color: white;
   text-decoration: none;
 }
-.be-red{
-  background-color: #2E2F30;
-}
-.white{
-  color: white;
-}
-.large-padding{
-  padding: 10px 10px;
-}
-.no-margin{
-  margin: 0px;
-}
-.field{
-  margin-top: 1em;
-}
-.form-control{
-  border: none;
-  border-bottom: 1px solid;
-  outline: none;
-  width: 100%;
-  display: block;
-  padding: 10px 0px;
-  font-size: 1.2em;
-}
-.conteiner{
-  background-color: #999999;
-}
-.tabla{
-  table-layout: fixed;
-  width: 70%;
-  margin-left: 15%;
-  margin-top: 50px;
-  border-collapse: collapse;
-  border: 3px solid #000000;
+.logo-navContanier{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
+  flex-wrap: wrap;
 }
-
-.columna{
-  background-color: #999999;
-  text-align: center;
+.navigation ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navigation ul li{
+  display: inline-block;
+}
+.navigation ul li a{
+  display:block;
+  padding: 0.5rem 1rem ;
+  transition: all 1s;
+  border-radius: 10px;
+}
+.navigation ul li a:hover{
+  background: rgb(173, 133, 133);
 }
