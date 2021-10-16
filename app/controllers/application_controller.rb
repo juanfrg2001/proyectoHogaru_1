@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
-  def index
+  def hello
+
   end
 end
