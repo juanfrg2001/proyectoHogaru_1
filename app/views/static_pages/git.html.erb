@@ -1,12 +1,14 @@
 <body>
 <div class="main">
-  <div class="hbg"><img src="/images/imagenesPageGit/GitHub-Logo.jpg" width="970" height="294" alt="" /></div>
+  <div class="hbg"><%= link_to image_tag("imagesPageGit/GitHub-Logo.jpg", alt: "fondo image", width:"970", height: "294"),
+                               "https://rubyonrails.org/" %></div>
   <div class="content">
     <div class="mainbar">
       <div class="article">
         <h2><span>¿Que es GitHub?</span></h2>
         <div class="clr"></div>
-        <img src="images/imagenesPageGit/gitHub_1.png" width="613" height="150" alt="" />
+        <%= link_to image_tag("imagesPageGit/gitHub_1.png", alt: "gitHub1 image", width:"613", height: "150"),
+                    "https://rubyonrails.org/" %>
         <p>GitHub es una forja para alojar proyectos utilizando el
           sistema de control de versiones Git. Se utiliza principalmente
           para la creación de código fuente de programas de ordenador.
@@ -16,7 +18,8 @@
       <div class="article">
         <h2><span>Comandos GitHub</span></h2>
         <div class="clr"></div>
-        <img src="/images/imagenesPageGit/comandosGit.jpg" width="613" height="500" alt="" />
+        <%= link_to image_tag("imagesPageGit/comandosGit.jpg", alt: "comando1git image", width:"613", height: "500"),
+                    "https://rubyonrails.org/" %>
         <p>Los comandos en git hub son una herramiente fundamental para la creacion de proyectos
           dado que estos te dejan subir informacion a tu repositorio personal o compartido , el tener claro
           estos comandos es de mayor importoancia a la hora de trabajr con personas
@@ -34,16 +37,20 @@
             opcion es poner
             "git init [nombre_ubicacion]"
           </p>
-            <img src="images/imagenesPageGit/paso_1.png" width="500" height="40" alt="" />
+            <%= link_to image_tag("imagesPageGit/paso_1.png", alt: "paso1 image", width:"500", height: "40"),
+                        "https://rubyonrails.org/" %>
           </li>
           <li>
             <h5>git branch</h5> <p>
             Este comando sirve para crear una nueva rama en nuestro proyecto </p>
-            <img src="images/imagenesPageGit/creacion_rama.png" width="500" height="40" alt="" />
+            <%= link_to image_tag("imagesPageGit/creacion_rama.png", alt: "creacionRama image", width:"500", height: "40"),
+                        "https://rubyonrails.org/" %>
             <p><strong>git checkout [nombre-rama] :</strong>Se usa para acceder a la rama seleccionada</p>
-            <img src="images/imagenesPageGit/rama_checkout.png" width="500" height="40" alt="" />
+            <%= link_to image_tag("imagesPageGit/rama_checkout.png", alt: "rama_check image", width:"500", height: "40"),
+                        "https://rubyonrails.org/" %>
             <p><strong>git branch -d [nombre-rama] : </strong>Se usa para eliminar la rama seleccionada</p>
-            <img src="images/imagenesPageGit/rama_eliminar.png" width="500" height="30" alt="" />
+            <%= link_to image_tag("imagesPageGit/rama_eliminar.png", alt: "rama_eliminar image", width:"500", height: "40"),
+                        "https://rubyonrails.org/" %>
           </li>
           <li>
             <h5>git commit</h5> <p>
@@ -53,17 +60,20 @@
             La nomenlatura normalmente se le agrega una "-m" la cual hace referencia
             al mensaje que se manda con el commit
           </p>
-            <img src="images/imagenesPageGit/commit-m.png" width="500" height="30" alt="" />
+            <%= link_to image_tag("imagesPageGit/commit-m.png", alt: "commit-m image", width:"500", height: "30"),
+                        "https://rubyonrails.org/" %>
             <p><strong>La opcion -a</strong>
               Esta nomenclaturo "-a" representa (all) , esta opcion prepara automaticamente
               todos los archivos para realizarles commit
             </p>
-            <img src="images/imagenesPageGit/commit-a.png" width="500" height="30" alt="" />
+            <%= link_to image_tag("imagesPageGit/commit-a.png", alt: "commit-a image", width:"500", height: "30"),
+                        "https://rubyonrails.org/" %>
             <p><strong>La opcion --amend</strong>
               Esta nomenclaturo "--amend" es bastante util dado que la funcion de esta
               es cambiar tu ultimo commit
             </p>
-            <img src="images/imagenesPageGit/commit--ammed.png" width="500" height="20" alt="" />
+            <%= link_to image_tag("imagesPageGit/commit--ammed.png", alt: "commit-a image", width:"500", height: "20"),
+                        "https://rubyonrails.org/" %>
           </li>
           <li>
             <h5>Enviar codigo a un repositorio remoto</h5>
@@ -72,7 +82,8 @@
               algun cambio o simplemente subir tus archivos a un repositorio remoto,
               este toma dos argumentos git push [nmbre remoto] [nombre rama]
             </p>
-            <img src="images/imagenesPageGit/git_push1.png" width="500" height="20" alt="" />
+            <%= link_to image_tag("imagesPageGit/git_push1.png", alt: "push1 image", width:"500", height: "20"),
+                        "https://rubyonrails.org/" %>
             <p>
               git push tambien tiene otras funciones como renombrar las ramas :
               git push  [REMOTENAME] [LOCALBRANCHNAME]:[REMOTEBRANCHNAME>]
@@ -141,15 +152,19 @@
         <h2><span>Sidebar</span> Menu</h2>
         <div class="clr"></div>
         <ul class="sb_menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="ruby.html">Ruby</a></li>
-          <li class="active><a href="git.html">Git hub - actions</a></li>
+          <li>
+            <%= link_to "Home", home_path %>
+          </li>
+          <li>
+            <%= link_to "Basics", basics_path %>
+          </li>
+          <li>
+            <%= link_to "Ruby", ruby_path %>
+          </li>
+          <li class="active">
+            <%= link_to "Git Actions", git_path %>
+          </li>
         </ul>
-      </div>
-      <div class="gadget">
-        <h2><span>Que es ruby?</span></h2>
-        <div class="clr"></div>
-        <p>Infromacion sobre ruby</p>
       </div>
     </div>
   </div>

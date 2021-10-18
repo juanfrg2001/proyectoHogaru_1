@@ -1,0 +1,216 @@
+<title>Ruby caracteristicas</title>
+<body>
+<div class="main">
+  <div class="hbg"><%= link_to image_tag("imagesPageRuby/VideoPresentacion.gif", alt: "fondo image", width:"970", height: "294"),
+                               "https://rubyonrails.org/" %></div>
+  <div class="content">
+    <div class="mainbar">
+      <div class="article">
+        <h2><span>Caracteristicas Varias de Ruby</span></h2>
+        <div class="clr"></div>
+        <ul class="sb_menu">
+          <li><h2><strong>Interpolacion Strings</strong></h2>
+            <p>
+              Ruby es la interpolación, básicamente es disponer una expresión dentro del String para que el interprete de Ruby la procese para obtener el String definitivo.
+              La interpolación solo funciona cuando un String esta definido con dobles comillas
+              En la interpolación intervienen los caracteres #{}
+              Todo lo que indicamos entre las llaves se sustituye por su valor.
+              En este ejemplo se imprime por pantalla el mensaje:
+            </p>
+            <%= link_to image_tag("imagesPageRuby/String_1.png", alt: "string1 image", width:"613", height: "254"),
+                        "https://rubyonrails.org/" %>
+            <%= link_to image_tag("imagesPageRuby/String_2.png", alt: "string1 image"),
+                        "https://rubyonrails.org/" %>
+          </li>
+
+          <li><h2><strong>Como se delcara un Array?</strong></h2><p>
+            Un arreglo es una lista ordenada de elementos de
+            cualquier tipo. Para crear tu primer
+            arreglo abre IRB y escribe lo siguiente
+          </p>
+            <p>
+              La sintaxis de un arreglo es muy simple. Los elementos
+              del arreglo se envuelven entre corchetes y se separan con coma.
+              Fíjate que el arreglo
+              que creamos contiene números, cadenas de texto y booleanos.
+            </p>
+            <%= link_to image_tag("imagesPageRuby/array_1.png", alt: "array1 image"),
+                        "https://rubyonrails.org/" %>
+            <%= link_to image_tag("imagesPageRuby/array_2.png", alt: "array2 image"),
+                        "https://rubyonrails.org/" %>
+          </li>
+          <li><h2><strong>Como se itera un array con el comando each</strong></h2><h5>
+            Primero hablemos sobre Comando "each"
+          </h5>
+          <li>
+            <p>
+              Comando each es una setencia que sirve para recorrer un elemento asi como
+              si fuera un "For" , este se usa para iterar sobre un elemento como
+              lo puede ser un arreglo, esta setencia siempre como es comun en ruby se acaba condimentum"end"
+            </p>
+          </li>
+          <p>
+            Ahora bien ya conocido el comando each vamos a ver como se puede usar este para iterarun arreglo
+          </p>
+          <%= link_to image_tag("imagesPageRuby/declarar_array.png", alt: "declararArray1 image"),
+                      "https://rubyonrails.org/" %>
+          <%= link_to image_tag("imagesPageRuby/declarar_array2.png", alt: "declararArray2 image"),
+                      "https://rubyonrails.org/" %>
+          </li>
+          <li><h2><strong>Como se declara un hash</strong></h2>
+            <h5>
+              Que es un "hash"
+            </h5>
+            <p>
+              Un hash no es más que una colección de datos en donde
+              cada valor está asociado a una llave. Imagina un diccionario,
+              en donde las palabras son las llaves y las definiciones son los valores.
+            </p>
+            <p>
+              Ahora bien vamos a implementar la funcion hash con ruby
+            </p>
+            <p>
+              Un hash se define utilizando corchetes ({}).
+              Los elementos se separan con coma (,) y
+              las llaves se separan de los valores con hash rocket (=>)
+            </p>
+            <%= link_to image_tag("imagesPageRuby/hash_1.png", alt: "hash1 image", width: "613",height: "100"),
+                        "https://rubyonrails.org/" %>
+          </li>
+          <li><h2><strong>Cómo se itera un hash utilizando el comando each?</strong></h2><p>
+            Ya anteriormente vimo como funciona un ciclo each en Ruby ademas conocimos o nos adentramos
+            un pococ a lo que es una declaracion "hash"
+          </p>
+            <%= link_to image_tag("imagesPageRuby/hash_iteracion.png", alt: "hashIteracion image"),
+                        "https://rubyonrails.org/" %>
+            <p>
+              En este caso se puede observar como se da nombre a los dos atributos iniciales
+              "llave", "valor" se tiene que tener en cuenta que siempre la variable que se va a usar tiene
+              que estar dentro de "{}"
+            </p>
+            <%= link_to image_tag("imagesPageRuby/hash_declaracion2.png", alt: "hash_declaracion2 image", width: "613",height: "100"),
+                        "https://rubyonrails.org/" %>
+            <%= link_to image_tag("imagesPageRuby/hash_declaracion3.png", alt: "hash_declaracion3 image"),
+                        "https://rubyonrails.org/" %>
+          </li>
+          <li><h2><strong>Que es un block en ruby?</strong></h2><p>
+            En Ruby, un bloque es básicamente una porción de código que puede pasarse y ejecutarse por cualquier método. Los bloques siempre se usan con métodos, que generalmente les envían datos (como argumentos).
+            Los bloques se usan ampliamente en las gemas de Ruby (incluidos Rails) y en el código de Ruby bien escrito.
+            No son objetos, por lo tanto, no pueden asignarse a variables.
+          </p>
+            <p>
+              Un bloque es un fragmento de código encerrado por {} o do..end.
+              Por convención, la sintaxis de llaves se debe usar para bloques de una sola línea y la
+              sintaxis do..end se debe usar para bloques de varias líneas.
+            </p>
+            <%= link_to image_tag("imagesPageRuby/bloques_1.png", alt: "hash_declaracion3 image"),
+                        "https://rubyonrails.org/" %>
+          </li>
+          <li><h2><strong>Cual es la convención en Ruby a la hora de nombrar variables?</strong></h2><p>
+            Hola informacion
+          </p>
+          </li>
+          <li><h2><strong>Qué son attr_reader, attr_writer y attr_accesor? Para qué sirven?</strong></h2><p>
+            <h5>
+              attr_reader
+            </h5>
+            <p>
+              El att reader es una forma de poder adentro de una funcion
+              crear un objeto de una manera mas sencilla, este se vuelve mas
+              util al momento que se quiera instanciar mas de un elemento asi dando
+              una mayor facilidad al escribir el codigo
+            </p>
+            <%= link_to image_tag("imagesPageRuby/att_reader.png", alt: "att_reader image"),
+                        "https://rubyonrails.org/" %>
+            <h5>
+              attr_writer
+            </h5>
+            <p>
+              Ahora bien siguiendo la linea de los attr , para que sirve el attr_reader?,
+              este metodo principalmente sirve para renombrar un atributo de un objeto ,
+              este se instancia y se colocan los atributos que se pueden cambiar
+            </p>
+            <%= link_to image_tag("imagesPageRuby/attr_writter1.png", alt: "att_writter1 image"),
+                        "https://rubyonrails.org/" %>
+            <%= link_to image_tag("imagesPageRuby/att_writter2.png", alt: "attr_witter2 image"),
+                        "https://rubyonrails.org/" %>
+            <h5>
+              attr_accesor
+            </h5>
+            <p>
+              Baicamente el attr_accesor es un metodo cuando necesitas
+              usar tanto el att_reader como el attr_writter , se puede decir que
+              con el accesor se puede combinar los dos metodos
+            </p>
+            <%= link_to image_tag("imagesPageRuby/attr_accesor.png", alt: "attr_accesor image"),
+                        "https://rubyonrails.org/" %>
+            </p>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="gadget">
+        <h2><span>Sidebar</span> Menu</h2>
+        <div class="clr"></div>
+        <ul class="sb_menu">
+          <li>
+            <%= link_to "Home", home_path %>
+          </li>
+          <li>
+            <%= link_to "Basics", basics_path %>
+          </li>
+          <li class="active">
+            <%= link_to "Ruby", ruby_path %>
+          </li>
+          <li>
+            <%= link_to "Git Actions", git_path %>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="clr"></div>
+  <div class="fbg">
+    <div class="col c3">
+      <h2><span>About</span></h2>
+      <p>Pagina de internet basada en el libro Ruby on rails en el cual se respone a diversas preguntas relacionadas con el tema a tratar <a href="https://drive.google.com/file/d/1XyKAxTS-s_UWT5cadX17WLD7kjS9PwCC/view">Learn more...</a></p>
+    </div>
+    <div class="wrap">
+      <div class = "widget">
+        <div class = "fecha">
+          <p id ="diaSemana" class = "diasSemana"></p>
+          <p id ="dia" class = "dia"></p>
+          <p>de</p>
+          <p id ="mes" class = "mes"></p>
+          <p>del</p>
+          <p id ="year" class = "year"></p>
+        </div>
+        <div class = "reloj">
+          <p id ="horas" class = "horas"></p>
+          <p>:</p>
+          <p id ="minutos" class = "minutos"></p>
+          <p>:</p>
+          <div class = "caja-segundos">
+            <p id ="ampm" class = "ampm"></p>
+            <p id ="segundos" class = "segundos"></p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="footer">
+    <p class="lf">HOGARU &copy; <a href="https://www.hogaru.com/hogares/?utm_source=google&utm_medium=cpc&utm_campaign=b2c_google_sab_agosto20&hct=B2C_Google_SAB_Ago20&hdt=&gclid=CjwKCAjwk6-LBhBZEiwAOUUDp6y6fgS6EhbOYa2G-DAkspnTiZ31YX5AbPtMkijHjg5aYJf0169RfxoCwcIQAvD_BwE">HOGARU</a>. Proyecto1 </p>
+    <p class="rf">Design by Juan Felipe Ruiz</p>
+    <p class="lf">Bibliografia &copy; <a href="https://drive.google.com/file/d/1XyKAxTS-s_UWT5cadX17WLD7kjS9PwCC/view">Ruby on rails</a>. Libro en donde se saco la informacion</p>
+    <div class="clr"></div>
+  </div>
+</div>
+</body>
