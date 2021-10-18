@@ -1,15 +1,81 @@
 <body>
-  <div class = "main">
-    <h6 class = "titulo_letra">
-      Bienevnido a ruby on rails
-    </h6>
-    <div class="hbg"><%= link_to image_tag("imagesPageHome/Imagen_inicio.jpg", alt: "fondo image", width:"970", height: "294"),
-                                 "https://rubyonrails.org/" %></div>
-    <div class="Section">
-
-
-    </div>
-    </div>
+<div class = "titulo">
+  <h6 class = "titulo_letra">
+    Bienevnido a ruby on rails
+  </h6>
+  <%= link_to image_tag("imagesPageHome/Imagen_inicio.jpg", alt: "fondo image", width:"970", height: "400"),
+              "https://rubyonrails.org/" %>
+</div>
+<div class = "Section">
+  <div class = "imagenBasics">
+    <%= link_to image_tag("imagesPageHome/rootes_home.jpg", alt: "fondo image", width:"200", height: "200", class:"image"),
+                basics_path %>
   </div>
+  <div class = textoBasic>
+    <p class = "letraTexto">
+      En este espacio vamos abarcar toda la tematica sobre las
+      "Rutas" y cuales son las funcionalidades principales que tienen.
+    </p>
+    <p class = "letraTexto">
+      Tambien se entra en tema sobre el resource , RestFull, Http
+    </p>
+    <p class = "letraTexto">
+      Oprime en la imagen para ver
+    </p>
+  </div>
+</div>
 
+<div class = "Section2">
+  <div class = "imagenBasics">
+    <%= link_to image_tag("imagesPageHome/ruby_home.jpg", alt: "fondo image", width:"200", height: "200", class:"image"),
+                ruby_path %>
+  </div>
+  <div class = textoBasic>
+    <p class = "letraTexto">
+      En este espacio vamos abarcar la tematica sobre la
+      sintaxis de Ruby , dentro de estas podemos encontrar
+      "each", "array", "hash"
+    </p>
+    <p class = "letraTexto">
+      Tambien la explicacion y para que sirven de cada elemento
+    </p>
+    <p class = "letraTexto">
+      Oprime en la imagen para ver
+    </p>
+  </div>
+</div>
+
+<div class = "Section3">
+  <div class = "imagenBasics">
+    <%= link_to image_tag("imagesPageHome/github_home.jpg", alt: "fondo image", width:"200", height: "200", class:"image"),
+                git_path %>
+  </div>
+  <div class = textoBasic>
+    <p class = "letraTexto">
+      En este espacio vamos abarcar la tematica de git hub,
+      los atajos y comandos que se pueden realizar .
+    </p>
+    <p class = "letraTexto">
+      Se muestra un proceso en el cual se genere cierto comandos utuiles para git
+    </p>
+    <p class = "letraTexto">
+      Oprime en la imagen para ver
+    </p>
+  </div>
+</div>
+
+</div>
+<div class="fbg">
+  <div class="col c3">
+    <h2><span>About</span></h2>
+    <p>Pagina de internet basada en el libro Ruby on rails en el cual se respone a diversas preguntas relacionadas con el tema a tratar <a href="https://drive.google.com/file/d/1XyKAxTS-s_UWT5cadX17WLD7kjS9PwCC/view">Learn more...</a></p>
+  </div>
+  <div class="clr"></div>
+</div>
+<div class="footer">
+  <p class="lf">HOGARU &copy; <a href="https://www.hogaru.com/hogares/?utm_source=google&utm_medium=cpc&utm_campaign=b2c_google_sab_agosto20&hct=B2C_Google_SAB_Ago20&hdt=&gclid=CjwKCAjwk6-LBhBZEiwAOUUDp6y6fgS6EhbOYa2G-DAkspnTiZ31YX5AbPtMkijHjg5aYJf0169RfxoCwcIQAvD_BwE">HOGARU</a>. Proyecto1 </p>
+  <p class="rf">Design by Juan Felipe Ruiz</p>
+  <p class="lf">Bibliografia &copy; <a href="https://drive.google.com/file/d/1XyKAxTS-s_UWT5cadX17WLD7kjS9PwCC/view">Ruby on rails</a>. Libro en donde se saco la informacion</p>
+</div>
+</div>
 </body>
