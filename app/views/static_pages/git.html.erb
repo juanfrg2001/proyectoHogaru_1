@@ -1,0 +1,173 @@
+<body>
+<div class="main">
+  <div class="hbg"><img src="/images/imagenesPageGit/GitHub-Logo.jpg" width="970" height="294" alt="" /></div>
+  <div class="content">
+    <div class="mainbar">
+      <div class="article">
+        <h2><span>¿Que es GitHub?</span></h2>
+        <div class="clr"></div>
+        <img src="images/imagenesPageGit/gitHub_1.png" width="613" height="150" alt="" />
+        <p>GitHub es una forja para alojar proyectos utilizando el
+          sistema de control de versiones Git. Se utiliza principalmente
+          para la creación de código fuente de programas de ordenador.
+          El software que opera GitHub fue escrito en Ruby on Rails</p>
+        <div class="clr"></div>
+      </div>
+      <div class="article">
+        <h2><span>Comandos GitHub</span></h2>
+        <div class="clr"></div>
+        <img src="/images/imagenesPageGit/comandosGit.jpg" width="613" height="500" alt="" />
+        <p>Los comandos en git hub son una herramiente fundamental para la creacion de proyectos
+          dado que estos te dejan subir informacion a tu repositorio personal o compartido , el tener claro
+          estos comandos es de mayor importoancia a la hora de trabajr con personas
+        </p>
+        <div class="clr"></div>
+      </div>
+      <div class="article">
+        <h2><span>Proceso consola</span></h2>
+        <div class="clr"></div>
+        <ul>
+          <li>
+            <h5>git init</h5> <p>
+            Este comando sirve para crear un repositorio ,
+            si se escribe de esta manera se crea en la carpeta donde estes ubicada otra
+            opcion es poner
+            "git init [nombre_ubicacion]"
+          </p>
+            <img src="images/imagenesPageGit/paso_1.png" width="500" height="40" alt="" />
+          </li>
+          <li>
+            <h5>git branch</h5> <p>
+            Este comando sirve para crear una nueva rama en nuestro proyecto </p>
+            <img src="images/imagenesPageGit/creacion_rama.png" width="500" height="40" alt="" />
+            <p><strong>git checkout [nombre-rama] :</strong>Se usa para acceder a la rama seleccionada</p>
+            <img src="images/imagenesPageGit/rama_checkout.png" width="500" height="40" alt="" />
+            <p><strong>git branch -d [nombre-rama] : </strong>Se usa para eliminar la rama seleccionada</p>
+            <img src="images/imagenesPageGit/rama_eliminar.png" width="500" height="30" alt="" />
+          </li>
+          <li>
+            <h5>git commit</h5> <p>
+            Guardará todos los cambio hechos en la zona de montaje o
+            área de preparación,
+            junto con una breve descripción del usuario, en un "commit" al repositorio local
+            La nomenlatura normalmente se le agrega una "-m" la cual hace referencia
+            al mensaje que se manda con el commit
+          </p>
+            <img src="images/imagenesPageGit/commit-m.png" width="500" height="30" alt="" />
+            <p><strong>La opcion -a</strong>
+              Esta nomenclaturo "-a" representa (all) , esta opcion prepara automaticamente
+              todos los archivos para realizarles commit
+            </p>
+            <img src="images/imagenesPageGit/commit-a.png" width="500" height="30" alt="" />
+            <p><strong>La opcion --amend</strong>
+              Esta nomenclaturo "--amend" es bastante util dado que la funcion de esta
+              es cambiar tu ultimo commit
+            </p>
+            <img src="images/imagenesPageGit/commit--ammed.png" width="500" height="20" alt="" />
+          </li>
+          <li>
+            <h5>Enviar codigo a un repositorio remoto</h5>
+            <p><strong>git push :</strong>
+              Este es el comando que vas a tener que usar cada vez que quieras subir
+              algun cambio o simplemente subir tus archivos a un repositorio remoto,
+              este toma dos argumentos git push [nmbre remoto] [nombre rama]
+            </p>
+            <img src="images/imagenesPageGit/git_push1.png" width="500" height="20" alt="" />
+            <p>
+              git push tambien tiene otras funciones como renombrar las ramas :
+              git push  [REMOTENAME] [LOCALBRANCHNAME]:[REMOTEBRANCHNAME>]
+            </p>
+          </li>
+          <li>
+            <h5>Diferencias entre reset y revert</h5>
+            <table>
+              <thead>
+              <tr>
+                <th scope="col">Reset</th>
+                <th scope="col">Revert</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Se utiliza para deshacer los cambios en su
+                  directorio de trabajo que aún no se han realizado.</td>
+                <td>Se utiliza para deshacer una confirmación anterior</td>
+              </tr>
+              <tr>
+                <td>Modifica la referencia a la que apunta la rama</td>
+                <td>Agrega un commit deshaciendo cambios.</td>
+              </tr>
+              <tr>
+                <td>Un reset es una operación que toma un commit específico y restablece el historial para que coincida con el
+                  estado del repositorio en ese commit específico</td>
+                <td>Un revert es una operación que toma un commit específico y crea un nuevo commit con el
+                  contenido del commit especificado.</td>
+              </tr>
+              </tbody>
+            </table>
+          </li>
+          <li>
+            <h5>Para que sirve un git checkout</h5>
+            <p>
+              El comando git checkout se puede usar también a
+              nivel de un único archivo. En cuyo caso su comportamiento
+              es diferente a cuando se usa a nivel de commit
+            </p>
+            <p>
+              Un checkout es una operación que mueve el puntero de
+              referencia HEAD a un commit específico.
+            </p>
+          </li>
+          <li>
+            <h5>git log</h5>
+            <p>
+              Este comando sirve para ver los commits que se han realizado
+            </p>
+            <p><strong>El comando -p</strong>
+              Este comando cuando se combina con el git log es muy util dado que
+              muestra las diferencias introducirdas en cada commit
+            </p>
+            <p><strong>El comando --stat</strong>
+              Este comando se utiliza principalmente para ver las estadisticas
+              de los commits que se han realizado
+            </p>
+          </li>
+        </ul>
+        <div class="clr"></div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="gadget">
+        <h2><span>Sidebar</span> Menu</h2>
+        <div class="clr"></div>
+        <ul class="sb_menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ruby.html">Ruby</a></li>
+          <li class="active><a href="git.html">Git hub - actions</a></li>
+        </ul>
+      </div>
+      <div class="gadget">
+        <h2><span>Que es ruby?</span></h2>
+        <div class="clr"></div>
+        <p>Infromacion sobre ruby</p>
+      </div>
+    </div>
+  </div>
+  <div class="clr"></div>
+</div>
+<div class="clr"></div>
+<div class="fbg">
+  <div class="col c3">
+    <h2><span>About</span></h2>
+    <p>Pagina de internet basada en el libro Ruby on rails en el cual se respone a diversas preguntas relacionadas con el tema a tratar <a href="https://drive.google.com/file/d/1XyKAxTS-s_UWT5cadX17WLD7kjS9PwCC/view">Learn more...</a></p>
+  </div>
+  <div class="clr"></div>
+</div>
+<div class="footer">
+  <p class="lf">HOGARU &copy; <a href="https://www.hogaru.com/hogares/?utm_source=google&utm_medium=cpc&utm_campaign=b2c_google_sab_agosto20&hct=B2C_Google_SAB_Ago20&hdt=&gclid=CjwKCAjwk6-LBhBZEiwAOUUDp6y6fgS6EhbOYa2G-DAkspnTiZ31YX5AbPtMkijHjg5aYJf0169RfxoCwcIQAvD_BwE">HOGARU</a>. Proyecto1 </p>
+  <p class="rf">Design by Juan Felipe Ruiz</p>
+  <p class="lf">Bibliografia &copy; <a href="https://drive.google.com/file/d/1XyKAxTS-s_UWT5cadX17WLD7kjS9PwCC/view">Ruby on rails</a>. Libro en donde se saco la informacion</p>
+  <div class="clr"></div>
+</div>
+</div>
+</body>

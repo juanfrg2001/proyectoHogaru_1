@@ -12,6 +12,9 @@
     <script type="text/javascript" src="js/cufon-yui.js"></script>
     <script type="text/javascript" src="js/arial.js"></script>
     <script type="text/javascript" src="js/cuf_run.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -33,7 +36,9 @@
           <li class="active">
             <%= link_to "Ruby", "../static_pages/Ruby" %>
           </li>
-          <li><a href="about.html">About Us</a></li>
+          <li class="active">
+            <%= link_to "Git Actions", "../static_pages/git"%>
+          </li>
         </ul>
         <div class="clr"></div>
       </div>

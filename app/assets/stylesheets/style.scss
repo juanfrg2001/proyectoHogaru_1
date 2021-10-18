@@ -5,7 +5,7 @@ body {
   width:100%;
   color:#afafaf;
   font:normal 12px/1.8em Arial, Helvetica, sans-serif;
-  background:#f3f3f3 url(images/bg.gif) repeat-x top;
+  background:#ffffff url(images/bg.gif) repeat-x top;
 }
 html, .main {
   padding:0;
@@ -18,6 +18,10 @@ html, .main {
   height:30px;
   padding:12px 20px 10px;
   margin:0 auto;
+}
+h5{
+  font:bold 17px/1.2em Arial, Helvetica, sans-serif;
+  color:#afaeae;
 }
 h1 {
   margin:0;
@@ -368,4 +372,32 @@ ol li .send {
   width:100%;
   font-size:0;
   line-height:0;
+}
+table{
+  width: 80%;
+  text-align: center;
+}
+
+thead th, tfoot th {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border: #595959;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+  color: black;
+}
+
+tbody td {
+  text-align: center;
+  border: #595959;
+}
+thead th, tfoot th, tfoot td {
+  background-color: #cddce6;
+  border: #595959;
 }
