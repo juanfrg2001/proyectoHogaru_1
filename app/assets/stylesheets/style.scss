@@ -192,13 +192,12 @@ ul.sb_menu li a, ul.ex_menu li a {
   color:#959595;
   text-decoration:none;
   padding:5px 5px 5px 20px;
-  background:url(images/menu_li_link.gif) no-repeat left center;
+
 }
 ul.ex_menu li span {
   padding:0 0 0 20px;
 }
 ul.sb_menu li a:hover, ul.ex_menu li a:hover, ul.sb_menu li.active a, ul.ex_menu li.active a {
-  background:url(images/menu_li_hover.gif) no-repeat left center;
   color:#24b4f1;
 }
 ul.sb_menu li a:hover {
@@ -400,4 +399,35 @@ tbody td {
 thead th, tfoot th, tfoot td {
   background-color: #cddce6;
   border: #595959;
+}
+.titulo_letra{
+  width: 80%;
+  margin-top: 7%;
+  color: #2E2F30;
+  margin-left: 30%;
+  font:normal 50px "Bebas Neue", cursive;
+  height: 40px;
+}
+.imagenBasics{
+  margin-top: 10%;
+  margin-left: 10px;
+  margin-bottom: 20px;
+
+}
+.textoBasic{
+  margin-left: 25%;
+  margin-top: -20%;
+}
+.Section{
+  background-color: #b5ddf1;
+  border-radius: 10px;
+  height: 220px;
+}
+.image{
+  margin-top: 10px;
+  border-radius: 10px;
+
+}
+.letraTexto{
+  font:normal 20px Arial, Helvetica, sans-serif;
 }
