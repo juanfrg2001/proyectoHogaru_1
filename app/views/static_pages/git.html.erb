@@ -130,17 +130,16 @@
             </p>
           </li>
           <li>
-            <h5>Como hacer que no escriban en un proyecto remoto</h5>
+            <h5>Cómo configurar el origen del repositorio remoto para evitar escribirlo
+              siempre cada vez que se hace un push o un pull</h5>
             <p>
-              Sencillemente en las configuraciones del git ,
-              se pone el proyecto en privado haciendo que nadie
-              pueda hacer algo en el
+              git upstream
             </p>
             <p>
-              Otra opcion puede ser no agregar colaboradores al momento
-              de crear nuestro proyecto haciendo que seamos los unicos
-              que puedan podificar el proyecto
+              Esto es para evitar que se empujen accidentalmente las ramas que aún no estás listo para empujar.
             </p>
+            <%= link_to image_tag("imagesPageGit/gitHub_upstream.png", alt: "git_commit_unarchivo1 image", width:"500", height: "150"),
+                        "https://www.it-swarm-es.com/es/git/definicion-de-downstream-y-upstream/970014780/" %>
           </li>
           <li>
             <h5>git log</h5>
@@ -165,13 +164,13 @@
             <p><strong>El comando git status</strong>
               Este comando te va hacer mirar el estado de los commits
             </p>
-            <%= link_to image_tag("imagesPageGit/git_commit_unarchivo.png", alt: "git_commit_unarchivo1 image", width:"500", height: "20"),
+            <%= link_to image_tag("imagesPageGit/git_commit_unarchivo.png", alt: "git_commit_unarchivo1 image", width:"500", height: "150"),
                         "https://es.stackoverflow.com/questions/334302/es-posible-hacer-commit-a-un-archivo-especifico/334304" %>
             <p><strong>El comando para hacer commit en un archivo</strong>
               se hace el commit normal , al final de la setencia del comentario despues de las comillas
               se agrega el nombre del archivo que aparece anteriormente con el git status
             </p>
-            <%= link_to image_tag("imagesPageGit/git_commit_unarchivo2.png", alt: "git_commit_unarchivo2 image", width:"500", height: "20"),
+            <%= link_to image_tag("imagesPageGit/git_commit_unarchivo2.png", alt: "git_commit_unarchivo2 image", width:"500", height: "60"),
                         "https://es.stackoverflow.com/questions/334302/es-posible-hacer-commit-a-un-archivo-especifico/334304" %>
           </li>
         </ul>
