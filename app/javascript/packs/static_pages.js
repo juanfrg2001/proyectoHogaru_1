@@ -1,5 +1,4 @@
 (function (){
-
     var actualizarHora = function (){
         var fecha = new Date(),
             horas = fecha.getHours(),
@@ -37,7 +36,6 @@
         if (horas == 0){
             horas = 12;
         }
-
         pHoras.textContent = horas;
         pAMPM.textContent =ampm;
 
@@ -47,15 +45,8 @@
         if(segundos <10){
             segundos = "0"+segundos;
         }
-
         pMinutos.textContent = minutos;
         pSegundos.textContent = segundos;
-
-
-
-
-
-
     };
 
     actualizarHora();
