@@ -133,13 +133,19 @@
             <h5>Cómo configurar el origen del repositorio remoto para evitar escribirlo
               siempre cada vez que se hace un push o un pull</h5>
             <p>
-              git upstream
+              <strong>git push</strong>
             </p>
             <p>
-              Esto es para evitar que se empujen accidentalmente las ramas que aún no estás listo para empujar.
+              este comando te permitira hacer uso de modificar ptoyecto de manera remota tanto la parte de heroku
+              como la de git
             </p>
-            <%= link_to image_tag("imagesPageGit/gitHub_upstream.png", alt: "git_commit_unarchivo1 image", width:"500", height: "150"),
-                        "https://www.it-swarm-es.com/es/git/definicion-de-downstream-y-upstream/970014780/" %>
+            <p>
+              Usando el comando "git cimmit -m "comentario"" , se hace el commit
+              ya luego el pus para la rama de heroku "git push heroku master" -aca se hace
+              el push a heroku de la rama mater
+            </p>
+            <%= link_to image_tag("imagesPageGit/push_hroku.png", alt: "push_hroku image", width:"500", height: "150"),
+                        "https://www.it-swarm-es.com/es/git/heroku-y-github-al-mismo-tiempo/1070931693/" %>
           </li>
           <li>
             <h5>git log</h5>
