@@ -1,5 +1,5 @@
 <title>Ruby caracteristicas</title>
-<body>
+<body onload="startTime()">
 <div class="main">
   <div class="hbg"><%= link_to image_tag("imagesPageRuby/VideoPresentacion.gif", alt: "fondo image", width:"970", height: "294"),
                                "https://rubyonrails.org/" %></div>
@@ -107,7 +107,34 @@
                         "https://rubyonrails.org/" %>
           </li>
           <li><h2><strong>Cual es la convención en Ruby a la hora de nombrar variables?</strong></h2><p>
-            Hola informacion
+            Un nombre es una letra mayúscula, una letra minúscula o un guión bajo, seguido por cualquier combinación de mayúsculas, minúsculas, números o guiones bajos.
+            Los nombres en Ruby se usan para referirse a constantes, variables, métodos, clases y módulos. La primera letra de un nombre ayuda a Ruby a
+            distinguirlos. Algunos nombres, son palabras reservadas y no pueden usarse como variable, método, clase o módulo.
+            <ul>
+              <li>
+                <h5>Variables</h5>
+                <p>
+                  Una variable local consiste en una letra minúscula o guión bajo seguido de cualquier mayúscula o minúscula. P.ej.: sunil, _z, rock_and_roll
+                </p>
+                <p>
+                  Una variable de clase empieza con dos arrobas seguido por cualquier mayúscula o minúscula. P.ej: @@signo, @@_, @@Counter
+                </p>
+                <p>
+                  Una variable global empieza por el signo dólar, seguido por cualquier carácter(no sólo mayúsculas o minúsculas). P.ej: $counter, $COUNTER, $-x.
+                </p>
+              </li>
+              <li>
+                <h5>Constantes</h5>
+                <p>
+                  Una constante empieza por una letra mayúscula, seguido por cualquier mayúscula o minúscula. Los nombres de clases y de módulos son constantes, y siguen unas normas.
+                </p>
+                <p>
+                  Los nombres de métodos deben empezar por una minúscula (letra o guión bajo). La ? y la !
+                  son los únicos caracteres ajenos al grupos de las mayúsculas y
+                  minúsculas, que se permiten como sufijos de los métodos. Más adelante se explicará su uso.
+                </p>
+              </li>
+            </ul>
           </p>
           </li>
           <li><h2><strong>Qué son attr_reader, attr_writer y attr_accesor? Para qué sirven?</strong></h2><p>
@@ -177,32 +204,6 @@
     <div class="col c3">
       <h2><span>About</span></h2>
       <p>Pagina de internet basada en el libro Ruby on rails en el cual se respone a diversas preguntas relacionadas con el tema a tratar <a href="https://drive.google.com/file/d/1XyKAxTS-s_UWT5cadX17WLD7kjS9PwCC/view">Learn more...</a></p>
-    </div>
-    <div class="wrap">
-      <div class = "widget">
-        <div class = "fecha">
-          <p id ="diaSemana" class = "diasSemana"></p>
-          <p id ="dia" class = "dia"></p>
-          <p>de</p>
-          <p id ="mes" class = "mes"></p>
-          <p>del</p>
-          <p id ="year" class = "year"></p>
-        </div>
-        <div class = "reloj">
-          <p id ="horas" class = "horas"></p>
-          <p>:</p>
-          <p id ="minutos" class = "minutos"></p>
-          <p>:</p>
-          <div class = "caja-segundos">
-            <p id ="ampm" class = "ampm"></p>
-            <p id ="segundos" class = "segundos"></p>
-
-          </div>
-
-        </div>
-
-      </div>
-
     </div>
     <div class="clr"></div>
   </div>
