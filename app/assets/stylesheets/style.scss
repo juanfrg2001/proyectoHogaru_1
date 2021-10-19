@@ -5,7 +5,6 @@ body {
   width:100%;
   color:#afafaf;
   font:normal 12px/1.8em Arial, Helvetica, sans-serif;
-  background:#ffffff url(images/bg.gif) repeat-x top;
 }
 html, .main {
   padding:0;
@@ -442,34 +441,52 @@ thead th, tfoot th, tfoot td {
 .letraTexto{
   font:normal 20px Arial, Helvetica, sans-serif;
 }
-.clockdate-wrapper {
-  background-color: #575757;
-  padding:25px;
-  max-width:350px;
-  width:100%;
-  text-align:center;
-  border-radius:5px;
-  margin:0 auto;
-  margin-top:15%;
+.wrap{
+  width: 90%;
+  max-width: 1000px;
+  margin:auto;
 }
-#clock{
-  background-color:#333;
-  font-family: sans-serif;
-  font-size:60px;
-  text-shadow:0px 0px 1px #fff;
-  color:#fff;
+.widget{
+  width: 40%;
+  margin: 2em;
 }
-#clock span {
-  color: #000000;
-  text-shadow:0px 0px 1px #333;
-  font-size:30px;
-  position:relative;
-  top:-27px;
-  left:-10px;
+.widget p{
+  display: inline-block;
+  line-height: 1em;
 }
-#date {
-  letter-spacing:10px;
-  font-size:14px;
-  font-family:arial,sans-serif;
-  color:#fff;
+.fecha{
+  margin-left: 64%;
+  font:normal 20px "Bebas Neue", cursive;
+  text-align: center;
+  margin-bottom: 5px;
+  background: #5cc9ef;
+  padding: 20px;
+  margin-top: 100px;
+  width: 100%;
+  opacity: 50%;
+}
+.reloj{
+  margin-left: 64%;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  background: #5cc9ef;
+  opacity: 50%;
+}
+.reloj .caja-segundos{
+  display: inline-block;
+}
+.reloj .segundos,
+.reloj .ampm{
+  font-size: 2rem;
+  display: block;
+}
+.fecha_letra{
+  font:normal 50px "Bebas Neue", cursive;
+}
+.reloj_letra{
+  font:normal 70px "Bebas Neue", cursive;
+}
+.segundos_letra{
+  font:normal 70px "Bebas Neue", cursive;
 }
